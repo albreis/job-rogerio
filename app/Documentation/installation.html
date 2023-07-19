@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tradebox - CryptoCurrency Buy Sell and Trading Software
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+<style>
+.ins, .ins li { font-size:100%; line-height:1.9em; margin: 3px 0; }
+</style>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="http://bdtask.com" target="_blank">BDTASK</a>
+          <div class="nav-collapse collapse">
+             <ul class="nav">
+              <li>
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="active">
+                <a href="./installation.html">Installation Guide</a>
+              </li>
+              <li class="">
+                <a href="./admin.html">Admin Guide</a>
+              </li>
+              <li class="">
+                <a href="./user.html">User Guide</a>
+              </li>   
+               <li>
+                <a href="./support.html">Support</a>
+              </li> 
+              <li>
+                <a href="./credit.html">Credits</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>Installation Guide</h1>
+    <p class="lead">Step-by-step guide to install Tradebox (CryptoCurrency Buy-Sell and Trading Software)
+
+</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="/installation.html"><b>Installation Steps</b></a></li>
+          <li><a href="#step-1"><i class="icon-chevron-right"></i> Step-1: Copy Tradebox Installation Files To Server.</a></li>
+          <li><a href="#step-2"><i class="icon-chevron-right"></i> Step-2: Create a Database & Database Admin</a></li>
+          <li><a href="#step-3"><i class="icon-chevron-right"></i> Step-3: Install Tradebox</a></li>
+          <li><a href="#contents"><i class="icon-chevron-right"></i> You're Done!</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+        <!-- Installation
+        ================================================== -->
+        <section id="step-1">
+          <div class="page-header">
+            <h1 style="color:#24486b">Installation Steps</h1>
+          </div>
+          <div class="page-header">
+            <h3>Step-1: Copying Tradebox Installation Files To Server</h3>
+              <p><b>php greater than 7.4 and 8 also can use | MySQL (5.1+) | Apache 4 </b></p>
+              <p><b>php extension must be enabled :  intl | mbstring | json</b></p>
+
+          </div>
+          <ol class="ins">    
+            <li>Extract <b>Tradebox-v6.4.zip</b> file.<br>You will then get two files:<br>
+              <ul>
+                <li style="line-height:75%"><b>Documentation</b></li>
+                <li><b>Tradebox-v6.4.zip</b></li>
+              </ul>
+            </li> 
+            <li>Upload the <b>Tradebox-v6.4.zip</b> file to your server using cPanel or FTP.<br>The example below shows how to upload and ready our Tradebox-v6.4 installer on CPanel:
+            <br>
+            [<b>Note:</b> These steps will be same for all other systems.]</li>
+            <ul>
+              <li>
+                Click on <b>File Manager</b>.
+                <img src="assets/images/cpanel_1.png" alt="cpanel_1.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                Open <b>public_html</b> folder by double-clicking on the public_html icon.
+                <img src="assets/images/cpanel_2.png" alt="cpanel_2.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                Click on <b>+Folder</b> in the top menu to create a new folder in your currect directory.
+                <img src="assets/images/cpanel_3.png" alt="cpanel_3.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                Enter <b>tradebox</b> as the folder name in the feild and then click on <b>Create New Folder</b>.
+                <img src="assets/images/cpanel_4.png" alt="cpanel_4.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                Now click on the <b>Upload</b> button in the top menu.
+                <img src="assets/images/cpanel_5.png" alt="cpanel_5.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                We will now upload the installer file:
+                <ol>
+                  <li style="line-height:75%">Click on <b>Select File</b>.</li>
+                  <li style="line-height:75%">Select the <b>tradebox-v6.4.zip</b> installer zip file.</li>
+                  <li style="line-height:75%">Click on <b>Open</b> button.</li>
+                  <li style="line-height:75%">Click on the <b>Go Back</b> link found in the bottom of the page.</li>
+                </ol><br>
+                <img src="assets/images/cpanel_6.png" alt="cpanel_6.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                We will now extract the uploaded zip file:
+                <ol>
+                  <li style="line-height:75%">Select the <b>tradebox-v6.4.zip</b> file.</li>
+                  <li style="line-height:75%">Click on <b>Extract</b>.</li>
+                </ol><br>
+                <img src="assets/images/cpanel_7.png" alt="cpanel_7.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                Click on <b>Extract Files</b> button.
+                <img src="assets/images/cpanel_8.png" alt="cpanel_8.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                Click on <b>Close</b> button.
+                <img src="assets/images/cpanel_9.png" alt="cpanel_9.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                Now we will delete the <b>tradebox-v6.4.zip</b> file.
+                <img src="assets/images/cpanel_10.png" alt="cpanel_10.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+                <img src="assets/images/cpanel_11.png" alt="cpanel_11.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+              <li>
+                Lastly we will move our files to the <b>/public_html"</b> <b>tradebox-v6.4.zip</b> file.
+                <img src="assets/images/cpanel_10.png" alt="cpanel_10.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+                <img src="assets/images/cpanel_11.png" alt="cpanel_11.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+              </li>
+            </ul>
+          </ol>
+      <br>
+      </section>
+      <section id="step-2">
+      <div class="page-header" >
+        <h3>Step-2: Creating a Database & Database Administrator</h3>
+      </div>
+      <ol>
+        <li>
+          In your <b>cPanel</b> > <b>Database</b> (section) > Click on <b>MySQL Databases</b><br><br>
+          <img src="assets/images/mysql_1.png" alt="mysql_1.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+        </li>
+        <li>
+          We will first create a new database. Enter a new database name and then click on <b>Create Database</b> button.<br><br>
+          <img src="assets/images/mysql_2.png" alt="mysql_2.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+        </li>
+        <li>
+          Now create an administrator for that database. Enter the username and password for the database administrator and then click on <b>Create User</b><br><br>
+          <img src="assets/images/mysql_3.png" alt="mysql_3.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+        </li>
+        <li>
+          We will now add the Administrator to the Database and give it all priviliges.<br><br>
+          <img src="assets/images/mysql_4.png" alt="mysql_4.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+          <img src="assets/images/mysql_5.png" alt="mysql_5.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+        </li>
+      </ol>
+    </section>
+    <section id="step-3">
+      <div class="page-header" >
+        <h3>Step-3: Installing Tradebox (Using Bdtask Software Installer)</h3>
+      </div>
+    </section>
+  <ol>
+  <li>Open the installer in your browser by searching <b>http://yourdomain.com/install</b> Then click on <b>Next</b>.
+    <br>
+    [Note: Replace "yourdomain" with your domain name.]<br><br>
+    Then enter your <b>Envato User ID</b> and <b>Purchase Key</b><br><br>
+    <img src="assets/images/installer_1.png" alt="installer_1.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+  </li><br>
+  <li>
+    Now make sure the mentioned files and directories have their permission set to writable.<br><br>
+    <img src="assets/images/installer_2.png" alt="installer_2.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+    Then make sure your server meets all the requirements needed to run Tradebox. (Note: If the requriements are not met then please make sure the requirements are met before proceeding with the installation). Click on the <b>Next</b> button.<br><br>
+    <img src="assets/images/installer_3.png" alt="installer_3.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+  </li><br>
+  <li>
+    Now enter your <b>Database Name</b>, <b>Database Username</b>, <b>Database Username's Password</b> and your <b>Hostname</b>.<br><br>Then click on the <b>Next</b> button.<br><br>
+    <img src="assets/images/installer_4.png" alt="installer_4.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+  </li><br>
+  <li>
+    Enter your Admin <b>Username</b> and <b>Password</b>. (Note: These will be used to login to the admin panel of Tradebox)<br><br>
+    <img src="assets/images/installer_5.png" alt="installer_5.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+  </li><br>
+  <li>
+    Click on the <b>Finish Installation Process</b> button.<br><br>
+    <img src="assets/images/installer_7.png" alt="installer_7.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+  </li><br>
+  <li>
+    You must now delete the installer by click on the <b>Delete Now</b> button for the application to run.<br><br>
+    <img src="assets/images/installer_8.png" alt="installer_8.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+  </li><br>
+  <li>
+    Click on <b>Launch Now</b> button to launch Tradebox.<br><br>
+    <img src="assets/images/installer_9.png" alt="installer_9.png" height="600" width="100%" style="border:1px solid #24486b"><br><br>
+  </li><br>
+</ol>
+<hr>
+  <h4><b>Thank you for purchasing the Tradebox, if you have any questions, please contact us at info@bdtask.com</b></h4>
+								
+
+          </ol>
+        </section>
+        <!-- Contents
+        ================================================== -->
+        <section id="contents">
+          <div class="page-header">
+            <h1>You're Done!</h1>
+          </div>         
+        </section>
+      </div>
+    </div>
+  </div>
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2021 bdtask . <a href="http://bdtask.com" target="_blank">bdtask.com</a></p> 
+        <p>Design by Bootstrap  <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a></p>
+        
+      </div>
+    </footer>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+    <script src="assets/js/application.js"></script>
+  </body>
+</html>

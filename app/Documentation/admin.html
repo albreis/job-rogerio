@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Tradebox - CryptoCurrency Buy Sell and Trading Software</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- Le styles -->
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+      <link href="assets/css/docs.css" rel="stylesheet">
+      <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+   </head>
+   <body data-spy="scroll" data-target=".bs-docs-sidebar">
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+      <!-- Navbar
+         ================================================== -->
+      <div class="navbar navbar-inverse navbar-fixed-top">
+         <div class="navbar-inner">
+            <div class="container">
+               <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="brand" href="http://bdtask.com" target="_blank">BDTASK</a>
+               <div class="nav-collapse collapse">
+                  <ul class="nav">
+                     <li class="active">
+                        <a href="./index.html">Home</a>
+                     </li>
+                     <li class="">
+                        <a href="./installation.html">Installation Guide</a>
+                     </li>
+                     <li class="">
+                        <a href="./admin.html">Admin Guide</a>
+                      </li>
+                      <li class="">
+                        <a href="./user.html">User Guide</a>
+                      </li> 
+                     <li>
+                        <a href="./support.html">Support</a>
+                     </li>
+                     <li>
+                        <a href="./credit.html">Credits</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Subhead
+         ================================================== -->
+      <header class="jumbotron subhead" id="overview">
+         <div class="container">
+            <h1>Admin Guide</h1>
+            <p class="lead">Step-by-step guide to install Tradebox (CryptoCurrency Buy-Sell and Trading Software)</p>
+         </div>
+      </header>
+      <div class="container">
+         <!-- Docs nav
+            ================================================== -->
+         <div class="row">
+            <div class="span3 bs-docs-sidebar">
+               <!-- <ul class="nav nav-list bs-docs-sidenav"> -->
+               <!--  <ul class="nav nav-list" style="margin-top: 50px;">
+                  <li><a href="#file-structure" class="scroll"><i class="icon-chevron-right"></i> User Guide</a></li>
+                  <li><a href="#contents" class="scroll"><i class="icon-chevron-right"></i> You're Done!</a></li>
+                  </ul> -->
+               <div class="page-header" style="margin-top: 65px;">
+                  <a href="#html-content" class="scroll">
+                     <h4>Admin Panel</h4>
+                  </a>
+               </div>
+               <ul class="nav nav-list">
+                  <li>
+                     <h6><a href="#admin-login" id="dashboard-menu" class="scroll">Admin Login</a></h6>
+                     <h6><a href="#dashboard" id="dashboard-menu" class="scroll">Dashboard</a></h6>
+                  </li>
+                  <li>
+                     <h6><a href="#finance" id="finance-menu" class="scroll">Finance</a></h6>
+                     <ol>
+                        <li>Fiat Withdraw List</li>
+                        <li>Crypto Withdraw List</li>
+                        <li>Deposit List</li>
+                        <li>Add Credit</li>
+                        <li>Credit List</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#trade" id="trade-menu" class="scroll">Trade</a></h6>
+                     <ol>
+                        <li>Open Order</li>
+                        <li>Trade History</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#exchange" id="exchange-menu" class="scroll">Exchange</a></h6>
+                     <ol>
+                        <li>Currency</li>
+                        <li>Markets</li>
+                        <li>Coin Pairs</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#admin" id="admin-menu" class="scroll">Admin</a></h6>
+                     <ol>
+                        <li>Add Admin</li>
+                        <li>Admin List</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#users" id="users-menu" class="scroll">Users</a></h6>
+                     <ol>
+                        <li>Create User</li>
+                        <li>User List</li>
+                        <li>Verify Users</li>
+                        <li>Subscriber List</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#settings" id="settings-menu" class="scroll">Settings</a></h6>
+                     <ol>
+                        <li>App Settings</li>
+                        <li>Security</li>
+                        <li>Fees Settings</li>
+                        <li>Transaction Setup</li>
+                        <li>Email Gateway</li>
+                        <li>SMS Gateway</li>
+                        <li>E-mail and SMS Template</li>
+                        <li>E-mail and SMS Permission</li>
+                        <li>Language</li>
+                        <li>Affiliation Setup</li>
+                        <li>External Api Setup</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#chartsettings" id="chart-settings" class="scroll">Chart Settings</a></h6>
+                     <ol>
+                        <li>Trading View</li>
+                        <li>Documentation</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#paymentgateway" id="paymentgateway-menu" class="scroll">Payment Gateway</a></h6>
+                     <ol>
+                        <li>Bank Payment</li>
+                        <li>Coin Payment</li>
+                        <li>Gourl</li>
+                        <li>Payeer</li>
+                        <li>Paypal</li>
+                        <li>Paystack</li>
+                        <li>Phone</li>
+                        <li>Stripe</li>
+                        <li>Token</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#addons" id="addons-menu" class="scroll">Addons</a></h6>
+                     <ol>
+                        <li>Add Theme</li>
+                        <li>Add Modules</li>
+                     </ol>
+                  </li>
+                  <li>
+                     <h6><a href="#cms" id="cms-menu" class="scroll">CMS</a></h6>
+                     <ol>
+                        <li>Theme Setting</li>
+                        <li>Page Content List</li>
+                        <li>F.A.Q List</li>
+                        <li>Notice List</li>
+                        <li>News List</li>
+                        <li>Category List</li>
+                        <li>Slider List</li>
+                        <li>Social Link List</li>
+                        <li>Advertisement List</li>
+                        <li>Web Language List</li>
+                     </ol>
+                  </li>
+               </ul>
+               
+            </div>
+            <div class="span9">
+               <section id="admin-login">
+                  <div class="page-header">
+                     <h1  style="color:#24486b">Admin Panel</h1>
+                  </div>
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Admin Login</h3>
+                     <p>Go to your <b>www.yourwebsite.com/admin</b> to login to the admin panel.</p>
+                     <img src="assets/images/adminpanel_adminlogin.png" alt="adminpanel_adminlogin.png" height="20" width="80%" style="border:1px solid #24486b"><br><br>
+                  </div>
+                  <a href="#file-structure" class="scroll backtext">Back To Top</a>
+               </section>
+               <section id="dashboard">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Dashboard</h3>
+                     <p>Dashboard shows a quick information overview of the entire system in one page.</p>
+                        <img src="assets/images/adminpanel_dashboard.png" width="100%" style="border:1px solid #24486b"><br><br>
+                        <img src="assets/images/adminpanel_dashboard_2.png" width="100%" style="border:1px solid #24486b"><br><br>
+                        <img src="assets/images/adminpanel_dashboard_3.png " width="100%" style="border:1px solid #24486b"><br><br><br>             
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="finance">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Finance</h3>
+                     <ol>
+                        <li><h4>Finance (Fiat Withdraw List)</h4>
+                           All fiat withdraw transaction requests will be show here. This includes success, failed as well as pending withdrawal requests.<br><br>For any pending withdrawal request, the admin will find and complete the withdrawal requests by using the <b>Confirm</b> or <b>Cancel</b> buttons under the <b>Action</b> section.<br><br>
+                           <img src="assets/images/finance_fiatwithdrawlist.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Finance (Crypto Withdraw List)</h4>
+                           All crypto withdraw transaction requests will be show here. This includes success, failed as well as pending withdrawal requests.<br><br>For any pending withdrawal request, the admin will find and complete the withdrawal requests by using the <b>Confirm</b> or <b>Cancel</b> buttons under the <b>Action</b> section.<br><br>
+                           <img src="assets/images/finance_cryptoWithdrawList.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Finance (Deposit List)</h4>
+                           All fiat and crypto deposit transactions will be shown here. This includes success, failed as well as pending deposit requests.<br><br>For any pending deposit request, the admin will find and complete the deposit requests by using the <b>Confirm</b> or <b>Cancel</b> buttons under the <b>Action</b> section.<br><br>
+                           <img src="assets/images/finance_depositList.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Finance (Add Credit)</h4>
+                           Here the admin can send funds (or credit) to any user account.<br><br>
+                           <img src="assets/images/finance_addcredit.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Finance (Credit List)</h4>
+                           History of credits transfered to any user account by the admin can be seen here.<br><br>
+                           <img src="assets/images/finance_creditList.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="trade">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Trade</h3>
+                     <ol>
+                        <li><h4>Trade (Open Order)</h4>
+                           All open Buy-Sell orders will be shown here.<br><br>
+                           <img src="assets/images/trade_openorder.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Trade (Trade History)</h4>
+                           All success, pending and failed trade history will be shown here.<br><br>
+                           <img src="assets/images/trade_tradehistory.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="exchange">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Exchange</h3>
+                     <ol>
+                        <li><h4>Exchange (Currency)</h4>
+                          This page list all fiat and crypto currencies that are in the exchange. The admin can add new currencies, edit existing currencies or remove any currency in the exchange from this page.<br><br>
+                           <img src="assets/images/exchange_currency.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                           To add a new currency the admin must:<br>
+                           <ul>
+                              <li>Select the <b>Currency Type</b></li>
+                              <li>Enter a <b>Coin ID</b> (Note: The ID will automatically be set auto-incrementally.)</li>
+                              <li>Enter the coin <b>Symbol</b>.</li>
+                              <li>Enter the <b>Coin Name</b>.</li>
+                              <li>Enter the <b>Coin Full Name</b>.</li>
+                              <li>Enter the <b>Rank</b>. (Compared to other currencies)</li>
+                              <li>Choose whether or not to show the currency in the homepage.</li>
+                              <li>Give it a serial number.</li>
+                              <li>Upload the coin image.</li>
+                              <li>Set the coin to be active or inactive.</li>
+                              <li>Click on <b>Create</b> button.</li>
+                           </ul><br>
+                           <img src="assets/images/exchange_currency_2.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                           When the admin chooses to update a currency they will be brought to this page. After making the needed change they must click on <b>Update</b> button to update the currency.<br><br>
+                           <img src="assets/images/exchange_currency_3.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Exchange (Market)</h4>
+                           Here the admin can add a new Market or manage previously created Markets.<br><br>
+                           <img src="assets/images/exchange_market.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                           If the admin chooses to create a new Market they will be brought to this page. After filling in the feilds they must click on <b>Create</b> button to create the new market.<br><br>
+                           <img src="assets/images/exchange_market_2.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                           If the admin chooses to edit an existing Market they will be brought to this page. After making the needed change they must click on <b>Update</b> button to update the existing market.<br><br>
+                           <img src="assets/images/exchange_market_3.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                     </li>
+                     <li><h4>Exchange (Coin Pair)</h4>
+                        Here the admin can create a new coin pair or manage previously created coin pairs.<br><br>
+                        <img src="assets/images/exchange_coinpair.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        If the admin chooses to create a new coin pair they will be brought to this page. After filling in the feilds they must click on <b>Create</b> button to create the new coin pair.<br><br>
+                        <img src="assets/images/exchange_coinpair_2.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        If the admin chooses to edit an existing coin pair they will be brought to this page. After making the needed change they must click on <b>Update</b> button to update the existing market.<br><br>
+                        <img src="assets/images/exchange_coinpair_3.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                     </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="admin">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Admin</h3>
+                     <ol>
+                        <li><h4>Admin (Add Admin)</h4>
+                           Here the admin can add sub-admins.<br><br>
+                           <img src="assets/images/admin_addadmin.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Admin (Admin List)</h4>
+                           Here the full list of admins and sub-admins can be seen.<br><br>
+                           <img src="assets/images/admin_adminList.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="users">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Users</h3>
+                     <ol>
+                        <li><h4>Users (Create User)</h4>
+                           Here the admin can create new users.<br><br>
+                           <img src="assets/images/users_createusers.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Users (User List)</h4>
+                           The full list of users signed up can be seen here. The admin can even edit user details from this page.<br><br>
+                           <img src="assets/images/users_userslist.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Users (Verify Users)</h4>
+                           The admin can verify the users who have applied for verification from this page.<br><br>
+                           <img src="assets/images/users_verifyusers.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                           After clicking on the Action button the admin will be brought to this page where they will check all details of user before confirming verification.<br><br>
+                           <img src="assets/images/users_verifyusers_2.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Users (Subscriber List)</h4>
+                           The list of all users subscribed to the mailing list can be seen from here.<br><br>
+                           <img src="assets/images/users_subscriberlist.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="settings">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Settings</h3>
+                     <ol>
+                        <li><h4>Settings (App Settings)</h4>
+                           The admin can update the app settings from here.<br><br>
+                           <img src="assets/images/setting_appsetting.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (Security)</h4>
+                           The admin can manage the CAPTCHA settings from here.<br><br>
+                           <img src="assets/images/setting_security.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (Fees Settings)</h4>
+                           The admin can set the buy, sell and withdraw fee settings from here.<br><br>
+                           <img src="assets/images/setting_feessetting.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (Transaction Settings)</h4>
+                           Here the admin can set a transaction limit for verified and unverified users.<br><br>
+                           <img src="assets/images/setting_transactionSetup.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (Email Gateway)</h4>
+                           Here the admin can setup their email gateway as well as test their email gateway.<br><br>
+                           <img src="assets/images/setting_emailgateway.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (SMS Gateway)</h4>
+                           Here the admin can setup their SMS gateway as well as test their SMS gateway.<br><br>
+                           <img src="assets/images/setting_smsgateway.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (Email & SMS Template)</h4>
+                           Here the admin can edit their Email and SMS text templates.<br><br>
+                           <img src="assets/images/setting_emailsmstemplate.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (Email & SMS Settings)</h4>
+                           Here the admin can edit their Email and SMS notification settings as well as choose to send SMS to users after a successfull deposit, transfer and withdraw.<br><br>
+                           <img src="assets/images/setting_emailsmssettings.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (Language)</h4>
+                           Here the admin can update the phrases used throughout the website for multiple languages.<br><br>
+                           <img src="assets/images/settings_language.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (Affiliation)</h4>
+                           Here the admin can set how much commission a user will recieve on a successfull refferal sign-up.<br><br>
+                           <img src="assets/images/setting_affiliation.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                        <li><h4>Settings (External API List)</h4>
+                           Here the admin can setup their external APIs to recieve their own data.<br><br>
+                           <img src="assets/images/setting_externalapilist.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                           <img src="assets/images/setting_updateexternalapi.png" alt="signin" width="100%" style="border:1px solid #24486b"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="chartsettings">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Chart Settings</h3>
+                     <ol>
+                        <li><h4>Chart Settings (Trading View)</h4>
+                           Here the admin can edit their Trading View chart settings.<br><br>
+                           <img src="assets/images/chartsetting_tradingview.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>Chart Settings (Documentation)</h4>
+                           Here the admin can find the documentation needed as a guide to follow when editing their Trading View chart settings.<br><br>
+                           <img src="assets/images/chartsetting_documentation.png" alt="signin" width="100%"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="paymentgateway">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Payment Gateway</h3>
+                     <ol>
+                        <li><h4>Payment Gateway (Coinpayment)</h4>
+                           Here the admin can add their <b>Coinpayment</b> payment gateway.<br> If they do not have an account they can create an account by clicking on the <b>Create Account</b> link provided.<br><br>
+                           <img src="assets/images/paymentgateway_coinpayment.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>Payment Gateway (Gourl)</h4>
+                           Here the admin can add their <b>Gourl</b> payment gateway.<br> If they do not have an account already they can create an account by clicking on the <b>Create Account</b> link provided.<br><br><br><br>
+                           <img src="assets/images/paymentgateway_gourl.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>Payment Gateway (Payeer)</h4>
+                           Here the admin can add their <b>Payeer</b> payment gateway.<br> If they do not have an account already they can create an account by clicking on the <b>Create Account</b> link provided.<br><br><br><br>
+                           <img src="assets/images/paymentgateway_payeer.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>Payment Gateway (Paypal)</h4>
+                           Here the admin can add their <b>Paypal</b> payment gateway.<br> If they do not have an account already they can create an account by clicking on the <b>Create Account</b> link provided.<br><br><br><br>
+                           <img src="assets/images/paymentgateway_paypal.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>Payment Gateway (Paystack)</h4>
+                           Here the admin can add their <b>Paystack</b> payment gateway.<br> If they do not have an account already they can create an account by clicking on the <b>Create Account</b> link provided.<br><br><br><br>
+                           <img src="assets/images/paymentgateway_paystack.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>Payment Gateway (Stripe)</h4>
+                           Here the admin can add their <b>Stripe</b> payment gateway.<br> If they do not have an account already they can create an account by clicking on the <b>Create Account</b> link provided.<br><br><br><br>
+                           <img src="assets/images/paymentgateway_stripe.png" alt="signin" width="100%"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="addons">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Addons</h3>
+                     <ol>
+                        <li><h4>Addons (Add Theme)</h4>
+                           Here the admin can customize Tradebox by using different themes.<br><br>
+                           <img src="assets/images/addons_addtheme.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>Addons (Add Module)</h4>
+                           Here the admin can customize Tradebox by using different themes.<br><br>
+                           <img src="assets/images/addons_addmodule.png" alt="signin" width="100%"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section>
+
+               <section id="cms">
+                  <div class="page-header">
+                     <h3 style="color:#24486b">❑ Content Mangement System (CMS)</h3>
+                     <ol>
+                        <li><h4>CMS (Themes Setting)</h4>
+                           Here the admin can customize their current theme.<br><br>
+                           <img src="assets/images/cms_themessettings.jpg" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (Page Content List)</h4>
+                           Here the admin can add new contents or update existing page contents used throughout the website.<br><br>
+                           <img src="assets/images/cms_pagecontentlist.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (F.A.Q List)</h4>
+                           Here the admin can add new F.A.Q's and edit existing F.A.Q's.<br><br>
+                           <img src="assets/images/cms_faq.png" alt="signin" width="100%"><br><br>
+                           <img src="assets/images/cms_faq_2.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (Notice List)</h4>
+                           Here the admin can add new notices and even update existing notices.<br><br>
+                           <img src="assets/images/cms_noticelist.png" alt="signin" width="100%"><br><br>
+                           <img src="assets/images/cms_noticelist_2.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (News List)</h4>
+                           Here the admin can add new news and even update existing news posts.<br><br>
+                           <img src="assets/images/cms_newslist.png" alt="signin" width="100%"><br><br>
+                           <img src="assets/images/cms_newslist_2.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (Category List)</h4>
+                           Here the admin can add new article categories and also edit existing article categories.<br><br>
+                           <img src="assets/images/cms_categorylist_1.png" alt="signin" width="100%"><br><br>
+                           <img src="assets/images/cms_categorylist.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (Slider List)</h4>
+                           Here the admin can add new slider images or delete existing slider images. (Note: These slider images are shown in the frontpage)<br><br>
+                           <img src="assets/images/cms_sliderlist.png" alt="signin" width="100%"><br><br>
+                           <img src="assets/images/cms_sliderlist_2.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (Social Link List)</h4>
+                           Here the admin can edit their social links.<br><br>
+                           <img src="assets/images/cms_sociallink.png" alt="signin" width="100%"><br><br>
+                           <img src="assets/images/cms_sociallink_2.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (Advertisement List)</h4>
+                           Here the admin can manage the advertisements shown on the website.
+                           <img src="assets/images/cms_advertisemetnlist.png" alt="signin" width="100%"><br><br>
+                        </li>
+                        <li><h4>CMS (Web Language List)</h4>
+                           Here the admin can manage their web languages.<br><br>
+                           <img src="assets/images/cms_languagelist.png" alt="signin" width="100%"><br><br>
+                        </li>
+                     </ol>
+                     <a href="#file-structure" class="scroll backtext">Back To Top</a>
+                  </div>
+               </section> 
+
+               <!-- Contents
+                  ================================================== -->
+               <section id="contents">
+                  <div class="page-header">
+                     <h1>You're Done!</h1>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+      <!-- Footer
+         ================================================== -->
+      <footer class="footer">
+         <div class="container">
+            <p>&copy; 2018 bdtask . <a href="http://bdtask.com" target="_blank">bdtask.com</a></p>
+            <p>Design by Bootstrap  <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a></p>
+         </div>
+      </footer>
+      <!-- Le javascript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/google-code-prettify/prettify.js"></script>
+      <script src="assets/js/bootstrap-transition.js"></script>
+      <script src="assets/js/bootstrap-alert.js"></script>
+      <script src="assets/js/bootstrap-modal.js"></script>
+      <script src="assets/js/bootstrap-dropdown.js"></script>
+      <script src="assets/js/bootstrap-scrollspy.js"></script>
+      <script src="assets/js/bootstrap-tab.js"></script>
+      <script src="assets/js/bootstrap-tooltip.js"></script>
+      <script src="assets/js/bootstrap-popover.js"></script>
+      <script src="assets/js/bootstrap-button.js"></script>
+      <script src="assets/js/bootstrap-collapse.js"s></script>
+      <script src="assets/js/bootstrap-carousel.js"></script>
+      <script src="assets/js/bootstrap-typeahead.js"></script>
+      <script src="assets/js/bootstrap-affix.js"></script>
+      <script src="assets/js/application.js"></script>
+      <script src="assets/js/custom.js"></script>
+   </body>
+</html>
